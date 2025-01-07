@@ -86,13 +86,14 @@ df['gender'] = df['gender'].astype('category')
 df['product_category'] = df['product_category'].astype('category')
 
 
-# Transaction ID isn't really important in our analysis.
+# Transaction ID isn't really important.
 df.drop('transaction_id', axis=1, inplace=True)
 
 
 #print(df.describe())
 
 '''
+Result:
 
                                 date         age     quantity  price_per_unit  total_amount
 count                           1000  1000.00000  1000.000000     1000.000000   1000.000000
@@ -108,12 +109,51 @@ std                              NaN    13.68143     1.132734      189.681356   
 '''
 
 
-# Answering the first question, how does customer age and gender influence their purchasing behaviors?
+# Conducting Univariate Analysis
 
-# We can see that 51% of the customers are female, while 49% of our customers are male.
+# Starting with gender.
 
-df['gender'].value_counts().plot(kind='pie', autopct = '%1.1f%%')
+#print(df['gender'].value_counts())
+
+'''
+Result:
+
+gender
+Female    510
+Male      490
+Name: count, dtype: int64
+
+ '''
+
+
+#df['gender'].value_counts().plot(kind='pie', autopct='%1.1f%%')
+# plt.show()
+'''
+The first graph, 01_gender_counts.png shows that 51%  (510) of the customers are female, 
+while 49% (490) of the customers are male.
+
+'''
+
+
+#print(df['product_category'].value_counts())
+
+'''
+Result:
+
+product_category
+Clothing       351
+Electronics    342
+Beauty         307
+
+'''
+
+df['product_category'].value_counts().plot(kind='bar', color='blue')
+plt.title("Product Category Frequency")
+plt.xticks(rotation = 0)
 plt.show()
+
+
+
 
 
 
