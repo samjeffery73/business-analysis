@@ -9,7 +9,7 @@ Developed by: Sam Jeffery
 Objective:
 
 Demonstrate my ability to create an end to end Data Analysis project by analyzing sales data, identifying trends, KPIs.
-Then, visualize and input the data into a dashboard.
+Then, visualize the data.
 
 This program is NOT object oriented.
 
