@@ -1,4 +1,4 @@
-﻿# business-analysis
+﻿# Business Analysis -- Personal Project
 
 Date started: 01/07/2025
 
