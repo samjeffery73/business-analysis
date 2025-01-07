@@ -13,7 +13,10 @@ Then, visualize and input the data into a dashboard.
 
 This program is NOT object oriented.
 
-1. Start by collecting data. For my own purposes, I will be pulling sales data from an API, or downloading it from kaggle. I will add the resource here once I figure out what I am using.
+1. Start by collecting data. For my own purposes, I will be pulling example sales data from Kaggle.
+Link:
+
+https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset/data
 
 
 2. Explore the data. Perform exploratory analysis, summary statistics, identify trends. Take note of any fields that are missing or invalid.
