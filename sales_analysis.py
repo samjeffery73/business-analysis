@@ -5,7 +5,9 @@ Developed by: Sam Jeffery
 
 For more information on this project please refer to the README.md file on the GitHub repository.
 
-To view my report, charts, and/or dashboard, please view the pictures and document that are also in the repository.
+A lot of code will be commented out, since it is for charts and display. It only needed to be run once, and the resulting charts were placed in PNG files.
+
+To view my report, charts, please view the pictures and the document file that are also in the repository.
 
 From the dataset on Kaggle, there are a few questions that are imposed that are interesting and worth exploring.
 
@@ -109,9 +111,7 @@ std                              NaN    13.68143     1.132734      189.681356   
 '''
 
 
-# Conducting Univariate Analysis
 
-# Starting with gender.
 
 #print(df['gender'].value_counts())
 
@@ -128,9 +128,12 @@ Name: count, dtype: int64
 
 #df['gender'].value_counts().plot(kind='pie', autopct='%1.1f%%')
 # plt.show()
+
 '''
 The first graph, 01_gender_counts.png shows that 51%  (510) of the customers are female, 
 while 49% (490) of the customers are male.
+
+
 
 '''
 
@@ -147,9 +150,54 @@ Beauty         307
 
 '''
 
-df['product_category'].value_counts().plot(kind='bar', color='blue')
-plt.title("Product Category Frequency")
-plt.xticks(rotation = 0)
+# df['product_category'].value_counts().plot(kind='bar', color='blue')
+# plt.title("Product Category Frequency")
+# plt.xticks(rotation = 0)
+# plt.show()
+
+'''
+The second graph just displays the counts of product_category. With Clothing being the most popular.
+
+'''
+
+
+print(df['age'].describe())
+
+'''
+Result:
+
+count    1000.00000
+mean       41.39200
+std        13.68143
+min        18.00000
+25%        29.00000
+50%        42.00000
+75%        53.00000
+max        64.00000
+Name: age, dtype: float64
+
+
+
+Looking at age, we can see that the mean age is 41 years old, with a stdev of 13.
+
+Our customers range from 18 to 64.
+
+
+'''
+
+print(df['age'].skew())
+
+'''
+Result:
+
+-0.04881245380328967
+
+There is almost no skew. This means that data is roughly symmetric.
+
+'''
+
+df['age'].plot(kind='hist')
+plt.xlabel('Age')
 plt.show()
 
 
