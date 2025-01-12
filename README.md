@@ -1,4 +1,4 @@
-﻿# Business Analysis -- Personal Project
+﻿# Business Analysis Personal Project 001
 
 Date started: 01/07/2025
 
@@ -8,9 +8,7 @@ Developed by: Sam Jeffery
 
 Objective:
 
-Demonstrate my ability to create an end to end Data Analysis project by analyzing sales data, identifying trends, answering questions, and visualizing key metrics.
-
-# All using Python!
+Demonstrate my ability to create an end to end basic Data Analysis project by analyzing sales data, identifying trends, answering questions, and visualizing key metrics, all using Python!
 
 This program is NOT object oriented.
 
